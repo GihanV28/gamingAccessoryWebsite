@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+*{cursor: url('images/mouse.png'), auto;}
+.view{height:500px;
+width:500px;
+margin-left:530px;
+}
+
+.thumbnail{
+	height:130px;
+	width:130px;
+	margin-left:120px;
+	
+	opacity:0.5;
+	
+	background-color:black;
+	border-radius:50%;
+}
+
+.active{
+	opacity:1;
+}
+
+
+
+
+p{margin-left:500px;
+
+}
+
+p1{margin-left:630px;
+}
+
+p2{margin-left:350px;
+}
+
+p3{margin-left:100px;
+}
+
+p4{margin-left:400px;}
+
+
+p,p1,p2,p3,p4{font-size:0.6em;}
+
+#description{color:white;
+padding-left:650px;
+font-size:1.8em;
+font-weight:300px;
+}
+
+body{background-image:linear-gradient(black,indigo,white);
+color:white;
+font-family:poppins;
+position:;
+}

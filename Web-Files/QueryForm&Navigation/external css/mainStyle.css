@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family : "Poppins" , sans-serif;
+    scroll-behavior: smooth;
+    cursor: url('Main_Assets/Mouse_Pointer/mouse.png'), auto;
+}
+
+body
+{
+    min-height: 115vh;
+    overflow-x: hidden;
+    background: linear-gradient(#3a0086,#000000);
+}
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #111111,transparent);
+    z-index: 1000;
+
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+section img#nitendo
+{
+    position: absolute;
+    z-index: 9;
+    animation: float 7s ease-in-out infinite;
+}
+
+section img#controller
+{
+    position: absolute;
+    z-index: 10;
+    animation: float 5s ease-in-out infinite;
+}
+
+#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 11;   
+    top: 30vh;
+}
+
+#explore
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #3a0086;
+    font-size: 1.5em;
+    transform: translateY(150px);
+    transition: 0.5s;
+    z-index: 9;
+    
+}
+
+#explore:hover{
+    color: rgb(0, 174, 255);
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#111111,#3a0086);
+}
+
+.sec video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+.container
+{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(84, 0, 219, 0.219),#2000354b);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.container .card .imgBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBx
+{
+    transform: translateY(-10px);
+}
+
+.container .card .imgBx img
+{
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBx img
+{
+    transform: translate(-20px,-40px) rotate(-5deg) scale(1.4);
+}
+
+.container .card .imgBx h3
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.container .card .content a
+{
+    position: relative;
+    top:-30px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    border-radius: 40px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.container .card .content a:hover{
+    color: rgb(255, 0, 140);
+}
+.section2
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(#3a0086,#000000);
+    position: relative;
+    padding: 100px;
+
+    
+
+    
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-50px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.section2 .vrAd{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: flex;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+#nameVr{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    font-weight: 600;
+    backdrop-filter: blur(100px);
+}
+
+#titleVR{
+    color: #fff;
+    position: relative;
+    display: flex;
+    font-size: 80px;
+    font-weight: 500;
+    z-index: 0;
+    bottom: 1vh;
+    right:6vw;
+}
+
+
+
+
+	

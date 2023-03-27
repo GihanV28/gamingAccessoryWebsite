@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="ques.css">
+	<link rel="stylesheet" href="../nav.css">
+	<link rel="stylesheet" href="../footerQ.css">
+  <!--icon style sheet-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+	<title> Cloud Kid | The Quiz </title>
+</head>
+<body>
+
+	<nav>
+		<!--checkbox for responsiveness-->
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+		  <i class="fas fa-bars"></i>
+		</label>
+		
+		
+		<!--label class="logo"-->
+		<img class= "logo" src="../Images/lg.png" alt="Cloud Kid Logo"><!--/label-->
+		
+			<!---menu item---->
+		   
+			<ul>
+				<li><a href="../../Main_Page/main.html">HOME</a></li>
+				<li><a href="../../PresentationPage&Shop/Shop/shop.html">SHOP</a></li>
+				<li><a href="../../QueryForm&Navigation/query_form_and_details/queryForm.html">QUERY FORM</a></li>
+				<li><a href="../../AboutUs&Quiz/Quiz/ques.html" class="selected">QUIZ</a></li>
+				<li><a href="../../Sitemap&Gallery/thumbnail2.html">SHOW CASE</a></li>
+				<li><a href="../../Sitemap&Gallery/SiteMap.html">SITE MAP</a></li>
+				<li><a href="../../AboutUs&Quiz/AboutUs/aboutUs.html">ABOUT US</a></li>
+			</ul>
+			
+	   </nav>
+
+	<!--quiz starting instruction panel html-->
+
+	<div class="home-box custom-box ">
+		<h3>Instructions:</h3>
+		<p>Total number of questions: <span class="total-questions"></span>
+			<br><br>You have 60 seconds to complete the quiz. Would you dare?</p>
+		<button type="button" class="btn" onclick="start()">Start</button>
+	</div>
+
+	<!--questionnaire begining html-->
+
+	<div class="quiz-box custom-box hide">
+		<div class="question-number">
+			
+		</div>
+		<div class="question-text">
+			
+		</div>
+		<div class="option-container">
+			
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answers-indicator">
+			
+		</div>
+	</div>
+
+	<!--result and summary panel html-->
+
+	<div class="result-box custom-box hide">
+		<h1>Result</h1>
+		<table>
+			<tr>
+				<td>Total Question</td>
+				<td><span class="total-questions"></span></td>
+			</tr>
+			<tr>
+				<td>Attempt</td>
+				<td><span class="total-attempt"></span></td>
+			</tr>
+			<tr>
+				<td>Correct</td>
+				<td><span class="total-correct"></span></td>
+			</tr>
+			<tr>
+				<td>Wrong</td>
+				<td><span class="total-wrong"></span></td>
+			</tr>
+			<tr>
+				<td>Percentage</td>
+				<td><span class="percentage"></span></td>
+			</tr>
+			<tr>
+				<td>Total Score</td>
+				<td><span class="total-score"></span></td>
+			</tr>
+			<tr>
+				<td>Total Time Taken</td>
+				<td><span class="total-time"></span></td>
+			</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+		<button type="button" class="btn" onclick="goHome()">Go Home</button>
+		
+	</div>
+
+	<footer>
+		<div class="waves">
+		 <div class="wave" id="wave1"></div>
+		 <div class="wave" id="wave2"></div>
+		 <div class="wave" id="wave3"></div>
+		 <div class="wave" id="wave4"></div>
+	   </div>
+		  <h2>Page editor</h2>
+		  <a id="name" href="../gihan.html">Gihan Wanninayaka</a>
+		  <p>© 2022 CLOUD KID | All Rights Reserved</p>
+	</footer>
+
+<script src="quesList.js"></script>
+<script src="quesApp.js"></script>
+
+</body>
+</html>

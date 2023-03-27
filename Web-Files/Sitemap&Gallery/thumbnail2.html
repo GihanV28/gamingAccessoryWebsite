@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <link rel="icon" href="images/icon.png">
+<title>ShowCase</title>
+<link rel="stylesheet" href="thumbnail2.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="footer.css">
+</head>
+<body >
+<!--student 2 navigation bar starts-->
+<nav>
+	  <!--checkbox for responsiveness-->
+	  <input type="checkbox" id="check">
+	  <label for="check" class="checkbtn">
+	    <i class="fas fa-bars"></i>
+	  </label>
+	  <img class="logo" src="images/lg.png" alt="logo">
+	      <!--menu item-->
+	      <ul>
+			<li><a href="../Main_Page/main.html">Home</a></li>
+			<li><a href="../PresentationPage&Shop/Shop/shop.html">Shop</a></li>
+			<li><a href="../QueryForm&Navigation/query_form_and_details/queryForm.html">Query Form</a></li>
+			<li><a href="../AboutUs&Quiz/Quiz/Quiz.html">Quiz</a></li>
+			<li><a href="../Sitemap&Gallery/thumbnail2.html" class="selected">Show Case</a></li>
+			<li><a href="../Sitemap&Gallery/SiteMap.html">Site Map</a></li>
+			<li><a href="../AboutUs&Quiz/AboutUs/aboutUs.html">About Us</a></li>
+		  </ul>
+	 </nav>
+<form>
+<span style="font-family: poppins;font-size:1.2em;">
+Background
+<select style="font-family:poppins; border-radius:20px;color:white;background-color:black;" onchange="pagecolor(this.value)">
+<option  value="">By Default</option>
+<option value="black">Black</option>
+<option value="#fff">White</option>
+<option value="#75bff0">Blue</option>
+<option value="#cea9cf">Pink</option>
+
+
+
+</select>
+
+
+TextColor
+<select style="font-family:poppins; border-radius:20px;color:white;background-color:black;" onchange="textcolor(this.value)">
+<option value="">White</option>
+<option value="black">Black</option>
+<option value="#1b0d85">Blue</option>
+<option value="#75bff0">Light Blue</option>
+<option value="#cea9cf">Pink</option>
+</select>
+</form>
+</span>
+<div id="zoom in">
+<img  id="0" class="view" src="images/nintendo.png"><br>
+
+<span id="description">Nintendo Switch<br><p1> Neon Blue + Neon Red Joy - Con</p1><p>3 in 1 mode Hybrid video game console with Bluetooth controllers.</p></span>
+</div>
+
+<br><br>
+
+
+<div id="all_thumbnails">
+<img  id="1" class= "thumbnail image active" src="images/nintendo.png" onmouseover="view(this)"onmouseenter="description_nintendo()"/>
+
+
+<img id="2"  class="thumbnail image" src="images/playstation.png"onmouseover="view(this)"onmouseenter="description_ps5()"/>
+
+
+<img id="3"class="thumbnail image"src="images/headset.png"onmouseover="view(this)"onmouseenter="description_headset()"/>
+
+
+<img id="4" class="thumbnail image" src="images/Razer Blade.png"onmouseover="view(this)"onmouseenter="description_laptop()"/>
+
+
+<img id="5" class="thumbnail image" src="images/oculusvr.png"onmouseover="view(this)"onmouseenter="description_oculus()"/>
+</div>
+
+
+
+<footer>
+           <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+             <h2>Page Editor</h2>
+             <a id="name" href="pageeditor_savinthie.html">Savinthie Suwandaratna</a>
+             <p>©2022 CLOUD KID | All Rights Reserved</p>
+       </footer>
+<script type="text/javascript" src="Thumbnail.js" >
+
+</script>
+
+</body>
+</html>

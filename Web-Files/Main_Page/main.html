@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="Main_Assets/Branding/icon.png">
+        <title>CLOUD KID</title>
+        <link rel="stylesheet" type="text/css" href="mainStyle.css">
+        <link rel="stylesheet" type="text/css" href="Page_Navbar/nav.css">
+        <link rel="stylesheet" type="text/css" href="Page_Footer/mainfooter.css">
+        <script src="https://kit.fontawesome.com/04d32f02e5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!-- All Title bar contents -->
+            <nav>
+                <!--checkbox for responsiveness-->
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                </label>
+                
+                
+                <img class= "logo" src="Page_Navbar/logo.png" alt="Cloud Kid logo">
+                
+                    <!--menu item-->
+                   
+                    <ul>
+                        <li><a href="../Main_Page/main.html" class="selected">HOME</a></li>
+                        <li><a href="../PresentationPage&Shop/Shop/shop.html">SHOP</a></li>
+                        <li><a href="../QueryForm&Navigation/query_form_and_details/queryForm.html">QUERY FORM</a></li>
+                        <li><a href="../AboutUs&Quiz/Quiz/Quiz.html">QUIZ</a></li>
+                        <li><a href="../Sitemap&Gallery/thumbnail2.html">SHOW CASE</a></li>
+                        <li><a href="../Sitemap&Gallery/SiteMap.html">SITE MAP</a></li>
+                        <li><a href="../AboutUs&Quiz/AboutUs/aboutUs.html">ABOUT US</a></li>
+                    </ul>
+                    
+            </nav>
+<!-- Title bar ends Here! -->
+
+        <section> <!-- image import for background section -->
+            <img src="Main_Assets/Background/nitendo.png" id="nitendo" alt="Nintendo Switch">
+            <h2 id="text">ONWARDS TO GLORY</h2>
+            <a href="#sec" id="explore">Explore</a>
+            <img src="Main_Assets/Background/controller.png" id="controller" alt="Gaming Controller">
+        </section>
+        
+        <div class="sec" id="sec"> <!--Product cards section-->
+            <h2>Choose Your Weapon >>></h2>
+            <video id="bgvideo" autoplay muted loop>
+                <source src="Main_Assets/Background/Main_bg.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src = "Main_Assets/Card_Images/headset.png" alt="SteelSeries HeadSet">
+                        <h3>SteelSeries</h3>
+                        <br>
+                    </div>
+                    <div class="content">
+                        <a href="../PresentationPage&Shop/Shop/shop.html" class="buyNowBtn">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src = "Main_Assets/Card_Images/nintendo.png" alt="Nintendo Switch">
+                        <h3>Nintendo</h3>
+                        <br>
+                    </div>
+                    <div class="content">
+                        <a href="../PresentationPage&Shop/Shop/shop.html">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src = "Main_Assets/Card_Images/oculusvr.png" alt="Oculus quest 2 VR">
+                        <h3>Oculus</h3>
+                        <br>
+                    </div>
+                    <div class="content">
+                        <a href="../PresentationPage&Shop/Shop/shop.html">BUY NOW</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- <p id="nameVr"> Oculus Quest 2</p>
+        <section class="section2">
+            <p id="titleVR"> AN ALL-IN-ONE<br>HEADSET<br>FILLED WITH <br>HUNDREDS OF<br> UNIQUE <br>EXPERIENCES.</p>
+            <div class="VRimageSection"></div>
+            <img src = "menWithVR.png">
+
+            <img src="/Assets/oculusvr.png" class="vrAd">
+            
+        </section> -->
+
+        <footer>
+            <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+            </div>
+            
+            <ul class="social_icon">
+            <li><a href="../Additional_Content_Page/additionalContent.html"><i class="fa-solid fa-cube"></i></a></li>
+            <a href="../Additional_Content_Page/additionalContent.html"id="additionalC">Additional Content</a>
+            </ul>
+            <ul class="menu">
+            <li><a href="../PresentationPage&Shop/Page_Editor/ishan.html"id="ishan">Ishan</a></li>
+            <li><a href="../QueryForm&Navigation/page_editor/page_editor.html"id="thushini">Thushini</a></li>
+            <li><a href="../AboutUs&Quiz/gihan.html"id="gihan">Gihan</a></li>
+            <li><a href="../Sitemap&Gallery/pageeditor_savinthie.html"id="savinthie">Savinthie</a></li>
+            </ul>
+            <p>© 2022 CLOUD KID | All Rights Reserved</p>
+            </footer>
+
+        <script>  // Parralax Effects Section
+            let nitendo = document.getElementById('nitendo');
+            let text= document.getElementById('text')
+            let explore = document.getElementById('explore')
+            let controller = document.getElementById('controller');
+            let header = document.querySelector("header");
+
+            window.addEventListener("scroll",function(){
+                let value = window.scrollY;
+                nitendo.style.top = value * 0.25 + "px";
+                text.style.marginRight = value * 4 + "px";
+                explore.style.marginTop = value *1.5 + "px";
+                controller.style.top = value * 0.25 + "px";
+                header.style.top= value * 0.5 + "px";    
+            })
+        </script>
+
+    </body>
+</html>

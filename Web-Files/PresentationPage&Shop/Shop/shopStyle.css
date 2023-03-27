@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family : "Poppins" , sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    cursor: url('Shop_Assets/Mouse_Pointer/mouse.png'), auto;
+}
+
+body
+{
+    background: linear-gradient(rgb(31, 31, 31),#000000fd);
+}
+
+
+
+
+/* ------------------------- Shop Items And Item Cards CSS Section ------------------------- */
+
+.shop-items
+{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.shop-items .card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(84, 0, 219, 0.219),#2000354b);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.shop-items .card .imgBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.shop-items .card:hover .imgBx
+{
+    transform: translateY(-10px);
+}
+
+.shop-items .card .imgBx img
+{
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.shop-items .card:hover .imgBx img
+{
+    transform: translate(-20px,-40px) rotate(-5deg) scale(1.4);
+}
+
+.shop-items .card .imgBx .shop-item-title
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.shop-items .card .shop-item-details button
+{
+    position: relative;
+    top:-40px;
+    display: block;
+    padding: 13px 20px;
+    background: white;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+    text-decoration: none;
+    border-style: inherit;
+    transition: 0.5s;
+}
+
+.shop-items .card .shop-item-details button:hover{
+    background: rgb(255, 0, 140);
+    color:#fff;
+}
+
+.shop-item-price{
+    position: relative;
+    top:-46px;
+    left: 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+
+
+/* ------------------------- Shopping Cart Css Section ------------------------- */
+
+.section-header {
+    font-family: "Poppins";
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: rgb(255, 255, 255);
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: rgb(255, 255, 255);
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.4s;
+
+}
+
+.btn-danger:hover {
+    background-color: #ff0000;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #ff0481;
+    background-color: rgba(36, 36, 36, 0.479);
+    color: rgb(255, 255, 255);
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+    font-weight: 500;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid rgb(255, 0, 140);
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+}
+
+.purchaseButton {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size:15px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border-style: inherit;
+    transition: 0.4s;
+}
+
+.purchaseButton:hover{
+    box-shadow: 0 0 5px #2196f3, 0 0 4px #2196f3, 0 0 40px #2196f3;
+}
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+
+
+/* ------------------------- Page Background Video CSS Section ------------------------- */
+
+#bgvideo {
+    
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    -webkit-filter: blur(100px);
+    -moz-filter: blur(1000px);
+    -o-filter: blur(1000px);
+    -ms-filter: blur(200px);
+    filter: blur(10px);
+}
+
+
+
+
+/* ------------------------- Header Elements CSS Section ------------------------- */
+
+header
+{
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+header ul li a:hover,
+header ul li a.selected
+{
+    background: #fff;
+    color: #3a0086;
+}
+
+
+
+
+/*------------------------- Popup box for user data input CSS Section-------------------------*/
+
+
+.popupContainer
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,300%);
+    text-align: center;
+    z-index: 1000;
+}
+
+.popupContainer h1
+{
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.popup
+{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-content
+{
+    height: 700px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+input
+{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.close
+{
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 28px -4px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.model
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgba(153, 153, 153, 0.103);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0 rgba(237, 178, 255, 0.212);
+    background: linear-gradient(135deg, #ff72a131,rgba(75, 168, 255, 0.158));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 500px;
+    max-width: 80%;
+    z-index: 21;
+}
+
+.model.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.model-header
+{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #fff;
+}
+
+.model-header .title
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.model-header .close-button
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.model-body
+{
+    padding: 10px 25px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#overlay
+{
+    position: fixed;
+    opacity:0 ;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(80px);
+    pointer-events: none;
+    z-index: 20;
+}
+
+#overlay.active
+{
+    opacity: 1;
+    pointer-events:all ;
+}
+
+
+#user-details-form {
+    width:400px;
+    padding:20px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.title {
+    margin-bottom: 0;
+
+}
+
+.input-group {
+    margin:-10px 0; 
+    position:relative;
+}
+
+.input-group label {
+    display:inline-block;
+    margin-top: 10px;
+}
+
+.input-group input {
+    display:block;
+    width:100%;
+    border-radius: 10px;
+    margin-top: 9px;
+    margin-bottom:25px;
+}
+
+.error input {
+    border:3px red solid;
+    margin-top: 5px;
+    margin-bottom:25px;
+   
+}
+
+.success input {
+    border:3px green solid;
+    margin-top: 5px;
+    margin-bottom:25px;
+ 
+}
+
+.input-group i {
+     position:absolute;
+     right:10px;
+     top:52px;
+     visibility: hidden;
+}
+
+
+.success i.fa-check-circle{
+     visibility: visible;
+     color:green;
+
+}
+
+.error i.fa-exclamation-circle {
+    visibility: visible;
+    color:red;
+}
+
+
+.input-group p {
+    font-size: 15px;
+    color:red;
+    visibility: hidden;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.error p 
+{
+    visibility: visible;
+}
+
+#btnPopup{
+    border-radius: 20px;
+    width: 100px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight:500 ;
+    transition: 0.4s;
+    border: none;
+}
+
+#btnPopup:hover{
+    background-color: #ff0481;
+    color: #fff;
+}
+
+/*------------------------- Buttons for navigate to cart and to top CSS Section-------------------------*/
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 70px;
+    right: 80px;
+    font-size: 29px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 20;
+}
+
+
+#back-to-top-btn:hover{
+    background-color: rgb(51, 51, 51);
+    color: rgb(0, 217, 255);  
+}
+
+#back-to-cart-btn {
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    font-size: 29px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 20;
+}
+
+#back-to-cart-btn:hover{
+    background-color: rgb(51, 51, 51);
+    color: rgb(0, 217, 255);  
+}
+
+

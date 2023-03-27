@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="Shop_Assets/Branding/icon.png">
+        <title>
+            Invoice
+        </title>
+        
+        <link rel="stylesheet" href="invoiceStyle.css">
+        
+    </head>
+    <body>
+        <a id="backTo" href="shop.html">Back to shop</a><br><br>
+        <div id="invoiceContent">
+            <div class="invoice-box">
+                <h2 class="section-header">INVOICE</h2>
+                <tr class="information">
+                    <td colspan="2">
+                        <table class="companyDetails">
+                            <tr>
+                                <td>
+                                    Cloud Kid, Inc.<br />
+                                    Galle Road<br />
+                                    Colombo, 90000
+                                </td>
+
+                                <td>
+                                    Invoice #: 9982<br />
+                                    Created on: 2022
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <table class="bottom"> 
+                                <tr>
+                                    <td >
+                                        <img src="Shop_Assets/Branding/CLOUDKID_Logo_Dark.png" alt="Company logo" style="width: 100%; max-width: 100px" />
+                                    </td>
+                                    <td>
+                                        CLOUD KID<br />
+                                        Contact Us : +94771234567<br />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <div class="userDetails">
+                        <p id="coustomerDTitile">Coustomer Details</p>
+                        <p id="paragraph"></p>
+                    </div>
+                    <section class="container content-section">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">ITEM</span>
+                            <span class="cart-price cart-header cart-column">PRICE</span>
+                            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                        </div>
+                        <div id="cartItems"></div>   
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span id="totalOut"></span>
+                        </div>
+                    </section>        
+                </table>
+            </div>
+        </div>        
+        <script>
+            document.getElementById("totalOut").innerHTML=localStorage.getItem("textvalue");
+            document.getElementById("cartItems").innerHTML=localStorage.getItem("ITEMS");
+        </script>
+        <script src="invoice.js"></script>
+    </body>
+</html>

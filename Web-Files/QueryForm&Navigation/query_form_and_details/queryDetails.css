@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+
+*{
+	font-family : "Poppins" , sans-serif;
+}
+.container{
+	background:rgba(255,255,255,0.25);
+	box-shadow:rgba(0,0,0,0.2)0px 60px 40px -7px;
+	backdrop-filter:blur(4px);
+	border-radius:10px;
+	border:2px inset white;
+	width:450px;
+	height:650px;
+	position:absolute;
+	left:40%;
+	top:100px;
+	transform:perspective(1000px) rotateY(20deg);
+	transition:0.1s;
+	
+}
+
+.container:hover{
+	transition:0.1s;
+	transition:rotateY(0deg);
+	border:2px solid white;
+}
+
+input{
+	margin-left:75px;
+	margin-top:20px;
+	width:300px;
+	height:55px;
+	transform:scale(1);
+	transition:1s;
+	resize:none;
+	border:2px solid white;
+	text-align:center;
+	color:white;
+	font-size:20px;
+	background:transparent;
+}
+
+textarea{
+	margin-left:75px;
+	margin-top:20px;
+	width:300px;
+	height:100px;
+	transform:scale(1);
+	transition:0.3s;
+	resize:none;
+	border-radius:2px solid white;
+	text-align:center;
+	color:black;
+	font-size:15px;
+}
+
+textarea:hover,input:hover,select:hover{
+	transform:scale(1.1);
+	transition:0.3s;
+	border:2px solid white;
+}
+
+::-webkit-input-placeholder{
+	text-align:center;
+}
+
+h1{
+	width:200px;
+	margin:75px;
+	color:white;
+	transition:0.3s;
+	text-align:center;
+	
+}
+
+.subs{
+	color:white;
+	padding:0px 0px 0px 30px;
+	font-size:20px;
+}
+
+#button{
+	margin-left:75px;
+	margin-top:15px;
+	float:left;
+	text-align:center;
+	width:300px;
+	font:2em monospace;
+	text-decoration:none;
+	letter-spacing:1px;
+	color:white;
+	border-radius:50px;
+	border:3px solid white;
+	transition:0.35s ease all;
+	box-shadow:rgba(0,0,0,0.2)0px 60px 40px -7px;
+}
+
+/*#button2{
+	margin-left:75px;
+	margin-top:15px;
+	float:left;
+	text-align:center;
+	width:300px;
+	font:2em monospace;
+	text-decoration:none;
+	letter-spacing:1px;
+	color:white;
+	border-radius:50px;
+	border:3px solid white;
+	transition:0.35s ease all;
+	box-shadow:rgba(0,0,0,0.2)0px 60px 40px -7px;
+}*/
+
+
+/*#button1:hover{
+	color:#000;
+	background-color:white;
+	border-radius:2px solid white !important;
+	transform:scale(1.1);
+	transition:0.3s ease-in-out;
+}*/
+
+#button:hover{
+	color:#000;
+	background-color:white;
+	border-radius:2px solid white !important;
+	border-radius:2px solid white !important;
+	transform:scale(1.1);
+	transition:0.3s ease-in-out;
+}
+	
+/*.outer{
+	position:fixed;
+	background:url(images/bg.jpg);
+	background-position:center center;
+	background-size:cover;
+	transform:scale(1.1);
+	display:table;
+	height:100%;
+	width:100%;
+	z-index:-1;
+}*/
+
+#bg{
+	width:100vw;
+	height:100vh;
+	object-fit:cover;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+}
+
+
+	
+	
+	
+	
+	
+     
+	 

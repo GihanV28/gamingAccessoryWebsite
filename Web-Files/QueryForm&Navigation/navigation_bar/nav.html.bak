@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="../images/icon.png">
+  <title>Nav bar></title>
+  
+  <!--The link to connect the nav css-->
+  <link rel="stylesheet" href="nav.css">
+ 
+  <!--icon style sheet-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+   <nav>
+	  <!--checkbox for responsiveness-->
+	  <input type="checkbox" id="check">
+	  <label for="check" class="checkbtn">
+	    <i class="fas fa-bars"></i>
+	  </label>
+	  
+	  
+	  <!--label class="logo"--><img class= "logo" src="../images/lg.png" alt="cloudkid logo"><!--/label-->
+	  
+	      <!--menu item-->
+		 
+	      <ul>
+			  <li><a href="../Main_Page/main.html">HOME</a></li>
+			  <li><a href="#">SHOP</a></li>
+			  <li><a href="../query_form_and_details/queryForm.html">QUERY FORM</a></li>
+			  <li><a href="#">QUIZ</a></li>
+			  <li><a href="#">SHOW CASE</a></li>
+			  <li><a href="#">SITE MAP</a></li>
+			  <li><a href="#">ABOUT US</a></li>
+		  </ul>
+		  
+	 </nav>
+	 
+	 
+  </body>
+  </html>

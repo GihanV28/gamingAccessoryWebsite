@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="Shop_Assets/Branding/icon.png">
+        <title>
+            Shop
+        </title>
+        <link rel="stylesheet" type="text/css" href="shopStyle.css">
+        <script src="shop.js" async></script>
+        <script> // Pass Values To Invoice Page
+            
+            function passvalues()
+            {
+                var finalTotal=document.getElementsByClassName("cart-total-price")[0].innerText;
+                console.log(finalTotal);
+                localStorage.setItem("textvalue",finalTotal);
+                return false; 
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/04d32f02e5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="Page_Navbar/nav.css">
+        <link rel="stylesheet" type="text/css" href="Page_Footer/footer.css">
+    </head>
+    <body>
+        <a href="#top" id="back-to-top-btn" title="Go to top"><i class="fas fa-angle-double-up"></i></a>
+        <a href=#cartIsHere id="back-to-cart-btn" title="Go to cart"><i class="fa-solid fa-bag-shopping"></i></a>
+
+<!-- All Title bar contents -->
+    <nav id="top">
+        <!--checkbox for responsiveness-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        
+        
+        <img class= "logo" src="Page_Navbar/logo.png" alt="Cloud Kid logo">
+        
+            <!--menu item-->
+           
+            <ul>
+                <li><a href="../../Main_Page/main.html">HOME</a></li>
+				<li><a href="../../PresentationPage&Shop/Shop/shop.html" class="selected">SHOP</a></li>
+				<li><a href="../../QueryForm&Navigation/query_form_and_details/queryForm.html">QUERY FORM</a></li>
+				<li><a href="../../AboutUs&Quiz/Quiz/Quiz.html">QUIZ</a></li>
+				<li><a href="../../Sitemap&Gallery/thumbnail2.html">SHOW CASE</a></li>
+				<li><a href="../../Sitemap&Gallery/SiteMap.html">SITE MAP</a></li>
+				<li><a href="../../AboutUs&Quiz/AboutUs/aboutUs.html">ABOUT US</a></li>
+            </ul>
+            
+    </nav>
+<!-- Title bar ends Here! -->
+        <video id="bgvideo" autoplay muted loop>
+            <source src="Shop_Assets/Background/background.mp4" type="video/mp4">
+        </video>
+       
+        
+    
+        <div class="sec" id="sec"> <!--Product cards section-->
+            
+            <div class="shop-items">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/nintendo.png" alt="Nintendo Switch">
+                        <span class="shop-item-title">Nintendo Switch</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$363.98</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/headset.png" alt="SteelSeries Arctis Pro HeadSet">
+                        <span class="shop-item-title">Arctis Pro</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$399.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/oculusvr.png" alt="Ouclus Rift Vr">
+                        <span class="shop-item-title">Oculus Quest 2</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$400.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/playstation.png" alt="Sony Play Station 5">
+                        <span class="shop-item-title">Play Station 5</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$499.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/alienware_pc.png" alt="Dell Alienware Aurora R13 Gaming PC">
+                        <span class="shop-item-title">Alienware Aurora</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2299.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/Razer_Blade_Laptop.png" alt="Razer Blade 14inch 4k laptop">
+                        <span class="shop-item-title">Razer Blade 14</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2649.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/alienware_monitor.png" alt="Dell Alienware AW3821DW Curved Monitor">
+                        <span class="shop-item-title">Alienware Monitor</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1399.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/Apex_Pro_Keyboard.png" alt="SteelSeries Apex Pro Gaming Keybord">
+                        <span class="shop-item-title">SteelSeries Apex Pro</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$149.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="shop-item-image" src = "Shop_Assets/Products_Images/Razer_Gaming_Mouse.png" alt="Razer Basilisk V3 Gaming Mouse with 26K DPI">
+                        <span class="shop-item-title">Razer Basilisk V3</span>
+                        <br>
+                    </div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$59.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div id="cartIsHere"></div>
+        
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div  id="mydiv1" class="cart-items">    
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button data-model-target="#model" class="purchaseButton" type="submit">PURCHASE</button>
+        </section>        
+        
+<!--Beginning Of User Input Section-->
+        <div class="model" id="model">
+            <div class="model-header">
+                <div class="title">User Details Form</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="model-body">
+                <form  id="create-account-form" action="invoice.html" method="GET">
+                    <!-- USERNAME -->
+                    <div class="input-group">
+                        <label for="username">Name</label>
+                        <input type="text" id="username" placeholder="Name" name="Name">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Error Message</p>
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email" name="Email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Error Message</p>
+                    </div>
+                    <!-- USER ADDRESS -->
+                    <div class="input-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Address" name="Address">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Error Message</p>
+                    </div>
+                    <!-- MOBILE NUMBER  -->
+                    <div class="input-group">
+                        <label for="mobileNumber">Mobile Number</label>
+                        <input type="tel" id="mobileNumber" placeholder="Mobile Number" name="Phone">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Error Message</p>
+                    </div>
+                <form action="output-Javascript-Localstorage.html" method="POST">
+                    <input id="btnPopup" type="submit" value="Checkout" onclick="passvalues(),invoiceData()"/>
+                    <script>
+                    function invoiceData(){
+                        var productsVar = document.getElementById('mydiv1').innerHTML;
+                        localStorage.setItem("ITEMS",productsVar);
+                        return;
+                    }
+                    </script>
+                </form>
+                <script src="CartUserInputValidation.js"></script>
+            </div>
+        </div>
+        <div id="overlay"></div>
+
+<!--End Of User Input Section-->
+
+        <script>
+                document.getElementsByClassName('purchaseButton')[0].addEventListener('click',checkMyCart)
+
+    
+                function checkMyCart(){
+                    var total = document.getElementsByClassName('cart-total-price')[0].innerText
+                    var finaltot = parseFloat(total.replace('$', ''))
+                    console.log(finaltot)
+                    if (finaltot <=0 ){
+                        alert("Your cart is empty")
+                    }
+                    else{
+                        runModel()
+                    }
+                }
+                
+                const openModelButtons = document.querySelectorAll('[data-model-target]')
+                const closeModelButtons = document.querySelectorAll('[data-close-button]')
+                const overlay = document.getElementById("overlay")
+                
+                function runModel(){
+                    openModelButtons.forEach(button=>{
+                        const model = document.querySelector(button.dataset.modelTarget)
+                        openModel(model)
+                        })
+                    }
+                
+
+                closeModelButtons.forEach(button=>{
+                        button.addEventListener('click', () => {
+                            const model = button.closest(".model")
+                            closeModel(model)
+                        })
+                    })
+
+                function openModel(model)
+                    {
+                        if (model ==null) return
+                        model.classList.add("active")
+                        overlay.classList.add("active")
+                    }
+
+                function closeModel(model)
+                    {
+                        if (model == null) return
+                        model.classList.remove("active")
+                        overlay.classList.remove("active")
+                    } 
+        </script>
+        
+        <footer>
+            <div class="waves">
+             <div class="wave" id="wave1"></div>
+             <div class="wave" id="wave2"></div>
+             <div class="wave" id="wave3"></div>
+             <div class="wave" id="wave4"></div>
+           </div>
+              <h2>Page editor</h2>
+              <a id="name" href="../Page_Editor/ishan.html">Ishan Emalsha</a>
+              <p>© 2022 CLOUD KID | All Rights Reserved</p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+*{cursor: url('images/mouse.png'), auto;}
+.svg_sections{font-family:poppins;
+font-size:1.5em;
+fill:white;
+}
+.svg_ellipse{fill:white;color:white;stroke:url(#rectangle_color);
+stroke-width:4px;}
+
+.svg_rect{fill:url(#rectangle_color);
+stroke:white;
+stroke-width:4px;
+
+
+
+
+}
+
+.svg_lines{stroke:white;stroke-width:4px;
+
+}
+
+.svg_editors{fill:white;}
+.sitemap{fill:url(#rectangle_color);font-size:2.0em;font-family:poppins;}
+
+
+body{background-image:url("gif.gif");
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+h2{color:white;text-align:center;font-family:poppins;}

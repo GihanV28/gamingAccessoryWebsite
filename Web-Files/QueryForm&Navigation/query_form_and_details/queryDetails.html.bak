@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="../images/icon.png">
+	<title>Query-details</title>
+	
+	<!--Add a connection to the CSS file-->
+	<link rel="stylesheet" href="queryForm.css">
+	
+	<!--The link to connect with the footer css-->
+	<link rel="stylesheet" href="footer.css">
+	
+	<!--The link to connect with the navigation bar css-->
+	<link rel="stylesheet" href="nav.css">
+	
+	<!--The link to add the top to bottom button-->
+	<script src="https://kit.fontawesome.com/0433854f6b.js" crossorigin="anonymous"></script>
+	
+	
+</head>
+
+<body>
+   <!--The code for the top to bottom button-->
+   <a href="#top" id="back-to-top-btn" title="Go to top"><i class="fas fa-angle-double-up"></i></a>
+   
+   <!--Starting of the navigation bar-->
+
+  <nav id="top">
+	  <!--checkbox for responsiveness-->
+	  <input type="checkbox" id="check">
+	  <label for="check" class="checkbtn">
+	    <i class="fas fa-bars"></i>
+	  </label>
+	 
+	  
+	  <img class= "logo" src="images/lg.png" alt="cloudkid logo">
+	  
+	      <!--menu item-->
+	      <ul>
+			  <li><a href="../Main_page/main.html">HOME</a></li>
+			  <li><a href="#">SHOP</a></li>
+			  <li><a href ="queryForm.html" class="selected">QUERY FORM</a></li>
+			  <li><a href="#">QUIZ</a></li>
+			  <li><a href="#">SHOW CASE</a></li>
+			  <li><a href="#">SITE MAP</a></li>
+			  <li><a href="#">ABOUT US</a></li>
+		  </ul>
+	 </nav>
+	 
+  <!--To add the background video-->
+  <video id="bg" autoplay muted loop>
+    <source src="images/background.mp4" type="video/mp4">
+  </video>
+ 
+ <div class="container">
+ 
+   
+	<!--Heading-->
+	<h1>Query Details</h1>
+	
+	<!--To get the labels-->
+	<h2>Name: <span id="result-name"></span></h2>
+	<h2>Email: <span id="result-email"></span></h2>
+	<h2>Subject: <span id="result-Sub"></span></h2>
+	<h2>Message: <span id="result-message"></span></h2>
+	
+	
+	
+	
+	<!--To get in to the previous page to edit the user entered details if they are incorrect-->
+	<input type="reset" id="button" value="Edit" onclick="edit()"> <!--calling the edit() function which is inside the queryDetails.js-->
+	
+	<!--To send the entered details to the email-->
+	<input type="submit" id="button" value="Send" onclick="send()"> <!--calling the send() function which is inside the queryDetails.js-->
+	
+	<!--TO connect to the javascript file--> 
+	<script defer src="queryDetails.js"></script>
+	
+	
+	
+	
+</div>
+  <!--Starting of the footer-->
+  <footer>
+   <div class="waves">
+    <div class="wave" id="wave1"></div>
+	<div class="wave" id="wave2"></div>
+	<div class="wave" id="wave3"></div>
+	<div class="wave" id="wave4"></div>
+  </div>
+    
+   
+  
+    
+     <h2>Page editor</h2>
+	 <a id="name" href="page_editor.html">Thushini Abeysuriya</a>
+	
+	 <p>© 2022 CLOUD KID | All Rights Reserved</p>
+   
+   </footer>
+	
+	
+</body>
+</html>

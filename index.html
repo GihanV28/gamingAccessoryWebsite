@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Presentation Page</title>
+        <link rel="icon" href="./Web-Files/PresentationPage&Shop/Presentation_Page/Branding/icon.png">
+        <script>
+            var seconds=5
+            function displaySeconds()
+            {
+                seconds -=1
+                document.getElementById("displaySeconds").innerText="This page will be redirect in "+seconds+" Seconds"
+            }
+            setInterval(displaySeconds,1000)
+            function redirectpage()
+            {
+                window.location="./Web-Files/Main_Page/main.html"
+            }
+            setTimeout ("redirectpage()",5000)
+        </script>
+
+        <link rel="stylesheet" href="./Web-Files/PresentationPage&Shop/Presentation_Page/indexStyle.css">
+
+    </head>
+    <body>
+        <video id="bgvideo" autoplay muted loop>
+            <source src="./Web-Files/PresentationPage&Shop/Presentation_Page/index_bg.mp4" type="video/mp4">
+        </video>
+        <h1>Title : Entertainment</h1>
+        <div id="displaySeconds"></div> 
+        
+        <section>
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <div class="imageBox"><img src="./Web-Files/PresentationPage&Shop/Presentation_Page/team_images/ishan.jpg" alt="Image of Ishan"></div>
+                        <div class="contentBox">
+                            <h3>Ishan Emalsha<br><span><br>20210036<br>Student 01</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imageBox"><img src="./Web-Files/PresentationPage&Shop/Presentation_Page/team_images/thushini.jpg" alt="Image of Thushini"></div>
+                        <div class="contentBox">
+                            <h3>Thushini Abeysuria<br><br><span>20210156<br>Student 02</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imageBox"><img src="./Web-Files/PresentationPage&Shop/Presentation_Page/team_images/gihan.jpg" alt="Image of Gihan"></div>
+                        <div class="contentBox">
+                            <h3>Gihan Wanninayaka<br><br><span>20210185<br>Student 03</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imageBox"><img src="./Web-Files/PresentationPage&Shop/Presentation_Page/team_images/savinthie.jpg" alt="Image of Savinthie"></div>
+                        <div class="contentBox">
+                            <h3>Savinthie Suwandaratna<br><br><span>20210181 <br>Student 04</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
